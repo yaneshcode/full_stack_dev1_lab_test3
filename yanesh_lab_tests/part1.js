@@ -74,7 +74,18 @@ Expected Output :
 "Red,Green,White,Black"
 "Red+Green+White+Black"
 */
-function joinElementsToString() {
+
+// since the question did not specify parameters that the function takes:
+// my parameters are an array of strings, and a delimiter character
+// eg: 
+// myColor = ["Red", "Green", "White", "Black"]
+// joinElementsToString(myColor, "+");
+// results in the 3rd output in the example above
+function joinElementsToString(a, delimiter) {
+  return a.join(delimiter);
+}
+
+function joinElementsToString2() {
   myColor = ["Red", "Green", "White", "Black"];
   console.log(myColor.toString());
 }
